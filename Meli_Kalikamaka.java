@@ -1,9 +1,4 @@
-import sun.security.acl.WorldGroupImpl;
-
 import java.io.*;
-import java.nio.file.ClosedWatchServiceException;
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Meli_Kalikamaka {
     /*
