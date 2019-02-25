@@ -1,5 +1,4 @@
 # k03olympiaadiylesanne
 
-Vabalt valitud ülesande lahendamine informaatikaolümpiaadi arhiivist
-
-https://www.teaduskool.ut.ee/et/olumpiaadid/informaatikaolumpiaadi-arhiiv
+Esimene ülesanne failist: 
+https://www.teaduskool.ut.ee/sites/default/files/teaduskool/olympiaad/eesti/eio_2012_13_ev_ylesanded_eesti.pdf
