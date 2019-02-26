@@ -30,3 +30,15 @@ public class k03olympiaad{
     }
 	}
 }
+
+/* TULEMUS
+Kontroll kas antud kipsplaate saab üksteise otsa panna
+Esimese plaadi mõõt on 1x4
+Teise plaadi mõõt on 2x5
+2 1
+
+Kontroll kas antud kipsplaate saab üksteise otsa panna
+Esimese plaadi mõõt on 1x4
+Teise plaadi mõõt on 2x3
+EI SAA
+*/
