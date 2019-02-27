@@ -13,22 +13,23 @@ public class k03olympiaad{
     plaat1 = rida.split(" ");
     rida = reader.readLine();
     plaat2 = rida.split(" ");
-    int abi1 = Integer.parseInt(plaat1[0]);
-    int abi2 = Integer.parseInt(plaat1[1]);
-    int abi3 = Integer.parseInt(plaat2[0]);
-    int abi4 = Integer.parseInt(plaat2[1]);
+    int plaat1pikkus = Integer.parseInt(plaat1[0]);
+    int plaat1laius = Integer.parseInt(plaat1[1]);
+    int plaat2pikkus = Integer.parseInt(plaat2[0]);
+    int plaat2laius = Integer.parseInt(plaat2[1]);
 
-    System.out.println("Esimese plaadi mõõt on " + plaat1[0] + "x" + plaat1[1]);
-    System.out.println("Teise plaadi mõõt on " + plaat2[0] + "x" + plaat2[1]);
-    if((abi1 >= abi3) && (abi2 >= abi4)) {
+    System.out.println("Esimese plaadi mõõt on " + plaat1pikkus + "x" + plaat1laius);
+    System.out.println("Teise plaadi mõõt on " + plaat2pikkus + "x" + plaat2laius);
+    if((plaat1pikkus >= plaat2pikkus) && (plaat1laius >= plaat2laius)) {
       System.out.println("1 2");
 
-    } else if ((abi3 >= abi1) && (abi4 >= abi2)) {
+    } else if ((plaat2pikkus >= plaat1pikkus) && (plaat2laius >= plaat1laius)) {
       System.out.println("2 1");
     } else {
       System.out.println("EI SAA");
     }
-	}
+    reader.close();
+  }
 }
 
 /* TULEMUS
