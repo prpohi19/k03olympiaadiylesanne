@@ -4,6 +4,7 @@ import java.util.*;
 public class k03olympiaad{
 	public static void main(String[] arg) throws Exception{
     BufferedReader reader = new BufferedReader(new FileReader("kipssis.txt"));
+    PrintWriter writer=new PrintWriter(new FileWriter("kipsval.txt"));
     System.out.println("Kontroll kas antud kipsplaate saab üksteise otsa panna");
     String rida;
     String[] plaat1;
@@ -22,15 +23,20 @@ public class k03olympiaad{
     System.out.println("Teise plaadi mõõt on " + plaat2pikkus + "x" + plaat2laius);
     if((plaat1pikkus >= plaat2pikkus) && (plaat1laius >= plaat2laius)) {
       System.out.println("1 2");
+      writer.println("1 2");
 
     } else if ((plaat2pikkus >= plaat1pikkus) && (plaat2laius >= plaat1laius)) {
       System.out.println("2 1");
+      writer.println("2 1");
     } else {
       System.out.println("EI SAA");
+      writer.println("EI SAA");
     }
+    writer.close();
     reader.close();
   }
 }
+
 
 /* TULEMUS
 Kontroll kas antud kipsplaate saab üksteise otsa panna
