@@ -1,7 +1,6 @@
 import java.util.*;
 import java.io.*;
 public class Copy{
-//https://www.teaduskool.ut.ee/sites/default/files/teaduskool/olympiaad/eesti/eio_2006_07_pv_ylesanded_eesti.pdf
    public static void main(String args[]) throws Exception{
      String loetud, tagurpidi = "";
 
@@ -25,3 +24,4 @@ public class Copy{
       writer.close();
    }
 }
+//https://www.teaduskool.ut.ee/sites/default/files/teaduskool/olympiaad/eesti/eio_2006_07_pv_ylesanded_eesti.pdf
