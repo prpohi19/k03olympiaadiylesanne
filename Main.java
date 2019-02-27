@@ -1,9 +1,8 @@
 import java.io.*;
 import java.util.*;
 
-/*Kirjutada programm, mis koostab antud teksti kohta kolm histogrammi — üldise,
- sõnade esitähtede ja sõnade viimaste tähtede oma. Sõnadeks lugeda kõik tähejadad, mis on uksteisest ¨
-eraldatud mistahes muude märkide või reavahetustega.
+/*
+https://www.teaduskool.ut.ee/sites/default/files/teaduskool/olympiaad/eesti/eio_2011_12_ev_ylesanded_eesti.pdf
 */
 public class Main {
 
