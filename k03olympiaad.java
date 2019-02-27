@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
-
+/* Kirjutada programm, mis kontrollib, kas kaks ristkulikukujulist kipsplaati on 
+võimalik asetada üksteise peale nii, et ülemine plaat ei ulatu üle alumise ääre. */
 public class k03olympiaad{
 	public static void main(String[] arg) throws Exception{
     BufferedReader reader = new BufferedReader(new FileReader("kipssis.txt"));
@@ -21,6 +22,10 @@ public class k03olympiaad{
 
     System.out.println("Esimese plaadi mõõt on " + plaat1pikkus + "x" + plaat1laius);
     System.out.println("Teise plaadi mõõt on " + plaat2pikkus + "x" + plaat2laius);
+    /* Tekstifaili kips.val ainsale reale väljastada:
+    kui plaate pole võimalik nõutud viisil üksteise peale asetada, väljastada EI SAA. 
+    Kui esimese plaadi saab asetada teise peale, väljastada 2 1; 
+    Kui teise plaadi saab asetada esimese peale, väljastada 1 2*/
     if((plaat1pikkus >= plaat2pikkus) && (plaat1laius >= plaat2laius)) {
       System.out.println("1 2");
       writer.println("1 2");
@@ -34,8 +39,9 @@ public class k03olympiaad{
     }
     writer.close();
     reader.close();
-  }
+	}
 }
+
 
 
 /* TULEMUS
