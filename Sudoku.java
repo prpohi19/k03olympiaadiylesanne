@@ -26,12 +26,12 @@ public class Sudoku {
                 int arv = tabel[i][k];
                 while(vordlus < 9) {
                     if(tabel[i][vordlus] == arv) {
-                        ajutine+=1;
+                        ajutine=vordlus;
                     }
                     vordlus++;
                 }
                 if(ajutine>1) {
-                    t[k]=1;
+                    t[k]=ajutine;
                 }
                 ajutine=0;
                 System.out.print(t[k]);
@@ -40,14 +40,12 @@ public class Sudoku {
             }
             System.out.println();
             for(k=0; k<9; k++){
-                if(t[k]!=0 && vastus < 2){
-                    if(vastus == 0){
-                        writer.println("VIGA");
-                    }
+                if(t[k]!=0){
+                    writer.println("VIGA");
                     vastus++;
                     writer.println((i+1)+" "+(k+1));
+                    writer.println((t[k]) + " " + (k + 1));
                 }
-            }
             if (vastus >=2){
                 writer.close();
                 break;
