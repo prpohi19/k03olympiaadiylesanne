@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Sudoku {
     public static void main(String[] arg) throws Exception {
-        BufferedReader lugeja=new BufferedReader(new FileReader("C:\\Users\\Urmot\\IdeaProjects\\Sularaha\\src\\sudoku.sis"));
+        BufferedReader lugeja=new BufferedReader(new FileReader("C:\\Users\\Student Admin\\eclipse-workspace\\Tekst\\src\\raha.sis"));
         PrintWriter writer = new PrintWriter("sudoku.val", "UTF-8");
         int[][] tabel = new int[9][9];
         int k , ajutine = 0;
@@ -44,16 +44,17 @@ public class Sudoku {
                     writer.println("VIGA");
                     vastus++;
                     writer.println((i+1)+" "+(k+1));
-                    writer.println((t[k]) + " " + (k + 1));
+                    writer.println((i+1) + " " + (t[k] + 1));
                 }
-            if (vastus >=2){
+            if (vastus >=1){
                 writer.close();
                 break;
             }
             t = new int[] {0,0,0,0,0,0,0,0,0};
         }
+        }
         System.out.println("--------------------------------");
-        if(vastus < 2) {
+        if(vastus < 1) {
             for (int i = 0; i < 9; i++) {
                 k = 0;
                 int vordlus = 0;
@@ -80,7 +81,7 @@ public class Sudoku {
                         writer.println("VIGA");
                         vastus++;
                         writer.println((i + 1) + " " + (k + 1));
-                        writer.println((t[k]) + " " + (k + 1));
+                        writer.println((t[k]+1) + " " + (k + 1));
                     }
                 }
                 if (vastus >= 1) {
