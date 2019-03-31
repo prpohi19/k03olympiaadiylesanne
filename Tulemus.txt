@@ -1,0 +1,1 @@
+Filist loetud kirje: 'Aias sadas saiA' on palindroom.
