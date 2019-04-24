@@ -25,13 +25,13 @@ public class Mars
 		{
 			if (i >= a)
 			{
-				m += p;
+				m = m + p;
 			}
-			i += 1;
-			p += 1;
+			i = i + 1;
+			p = p + 1;
 			if (p > k)
 			{
-				k += 1;
+				k = k + 1;
 				p = 1;
 			}
 		}
