@@ -15,11 +15,11 @@ public class Mars
 		String line = reader.readLine();
 
 		Scanner s = new Scanner(line);
-		int a = s.nextInt();
-		int b = s.nextInt();
-		int m = 0;
-		int k = 1;
-		int p = 1;
+		int a = s.nextInt(); // esimene number
+		int b = s.nextInt(); // teine number
+		int m = 0; // palju hoone on
+		int k = 1; // kuu
+		int p = 1; // paev
 		int i = 1;
 		while (i <= b)
 		{
